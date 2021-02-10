@@ -22,8 +22,7 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populate", {useNewUrlParser: true});
 
 // Requiring Routes
-app.use(require("./routes/apiRoutes"));
-app.use(require("./routes/htmlRoutes"));
+app.use(require("./routes"));
 
 // Start Server
 app.listen(PORT, () => {
