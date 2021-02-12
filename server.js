@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 // Creating express app
 const app = express();
 
+// Viewing connection statuses on terminal
 app.use(logger("dev"));
 
 app.use(express.urlencoded({extended: true}));
