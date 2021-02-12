@@ -50,6 +50,13 @@ router.put( "/api/workouts/:id", ( req, res ) => {
 });
 
 router.get("/api/workouts/range", (req, res) => {
+
+    Workout.find()
+           .then(( workouts ) => {
+        res.json( workouts );
+    }).catch(( err ) => {
+        res.status( 500 ).json( err );
+    });
     
 });
 

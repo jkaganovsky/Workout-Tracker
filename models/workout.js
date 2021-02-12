@@ -7,23 +7,7 @@ const WorkoutSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    exercises:[
-        {
-            type: {
-                type: String,
-                required: true
-            },
-            name: {
-                type: String,
-                required: true
-            },
-            duration: Number,
-            weight: Number,
-            reps: Number,
-            sets: Number,
-            distance: Number
-        }
-    ]
+    exercises: Array
 }, {
     toJSON: { virtuals: true }
 });
