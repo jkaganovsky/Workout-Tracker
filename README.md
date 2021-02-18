@@ -20,7 +20,7 @@ FEATURES
 ## Content
 DEMO
 
-![HTML gif](./public/assets/images/workout-tracker.gif)
+![Demo gif](./public/assets/images/workout-tracker.gif)
 
 
 
